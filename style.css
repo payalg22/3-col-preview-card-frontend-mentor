@@ -1,0 +1,137 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    font-family: "Lexend Deca";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    margin: 30px 20px;
+    width: 62%;
+    display: flex;
+    height: 68%;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .car {
+    margin-bottom: 10px;
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.car > * {
+    margin: 10px 5px;
+}
+
+.car h1 {
+    font-family: Big Shoulders Display;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5em;
+}
+
+.car p {
+    color: hsl(0, 0%, 95%);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.learn-more {
+    font-family: "Lexend Deca";
+    background-color: white;
+    height: 50px;
+    border: 0;
+    border-radius: 50px;
+    width: 150px;
+}
+
+#sedan-section {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+}
+
+.sedan button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suv-section {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury-section {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+}
+
+.luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+.learn-more:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+@media (max-width: 768px) {
+    main {
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .container .car {
+        height: 400px;
+        padding: 0;
+    }
+
+    #sedan-section {
+        border-radius: 8px 8px 0 0;
+    }
+
+    #luxury-section {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1400px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .learn-more {
+        position: relative;
+        top: 6%;
+    }
+}
